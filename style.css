@@ -1,0 +1,119 @@
+body {
+	font-family: monospace;
+}
+
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner-wrapper {
+	position: relative;
+}
+
+.slideshow-container {
+	position: relative;
+}
+
+.controller-container {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	display: none;
+}
+
+.content.active {
+	display: block;
+}
+
+.background-content {
+	position: relative;
+}
+
+.on-top-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px;
+}
+
+.text-with-background-color {
+	background: azure;
+	padding: 20px;
+}
+
+.dark {
+	background: #090909;
+}
+
+.full-screen {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	z-index: 2;
+}
+
+.close {
+	color: white;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 20px;
+	z-index: 3;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	font-family: monospace;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+
+.dot {
+	margin: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.active-dot {
+	background-color: rgba(255, 255, 255, 0.9);
+}

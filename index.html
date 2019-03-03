@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery slideshow</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+
+<h1 style="text-align: center">responsive jQuery <br>slideshow</h1>
+<p style="text-align: center">(autoslide is default 10sek)</p>
+
+<div class="wrapper">
+	<div class="inner-wrapper">
+		<div class="slideshow-container">
+			<div class="content active">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/01.jpg" alt="">
+					<div class="on-top-content">
+						<p>This is text on top of the image</p>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/02.jpg" alt="">
+					<div class="on-top-content">
+						<h1 class="text-with-background-color dark" style="color: azure; text-align: center">This is a
+							white headline on <br>top of the image <br> with a dark background</h1>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/03.jpg" alt="">
+					<div class="on-top-content">
+						<p class="text-with-background-color">This is text with background color on top of the image</p>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/04.jpg" alt="">
+					<div class="on-top-content">
+						<img src="https://thomasweb.studio/stock-images/02.jpg" alt="Image on top of image">
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/05.jpg" alt="">
+					<div class="on-top-content">
+						<p>The previous one was image on top of image</p>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="background-content">
+					<img src="https://thomasweb.studio/stock-images/06.jpg" alt="">
+					<div class="on-top-content">
+						<p class="text-with-background-color">This is coffe</p>
+					</div>
+				</div>
+			</div>
+			<!--If you would like to add more slides, please use the following html:-->
+			<!--<div class="content">-->
+			<!--<div class="background-content">-->
+			<!--<img src="PATH-TO-IMAGE-GOES-HERE" alt="">-->
+			<!--<div class="on-top-content">-->
+			<!--<p>This is text on top of the image</p>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
+		</div>
+		<div class="controller-container">
+			<button class="prev"><</button>
+			<button class="next">></button>
+		</div>
+	<div class="dots"></div>
+	</div>
+
+	<div class="close">X</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
